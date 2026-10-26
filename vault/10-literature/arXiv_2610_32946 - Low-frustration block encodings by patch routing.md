@@ -1,0 +1,47 @@
+---
+aliases: ["Low-frustration block encodings by patch routing"]
+tags: [literature/arxiv, status/triage]
+arxiv_id: "2610.32946"
+url: "http://arxiv.org/abs/2610.32946v1"
+published: "2026-10-23T17:40:02Z"
+ingested: "2026-10-26T12:19:15Z"
+authors:
+  - "Minzhao Liu"
+  - "Abeynaya Gnanasekaran"
+  - "Ananth Kaushik"
+  - "Siddharth Hariprakash"
+  - "Alireza Marefat Khah"
+  - "Martin Roetteler"
+  - "Grant Salton"
+---
+
+# Low-frustration block encodings by patch routing
+
+## Abstract
+
+> Block-encoding has emerged as a core primitive in many quantum algorithms, including quantum
+> simulation. In this work, we design efficient and extensible methods for generating low-
+> frustration block encodings of frustrated lattice Hamiltonians built from repeated local
+> interaction patches through a technique we call "patch routing". We construct block encodings
+> for a full Hamiltonian by first block-encoding a small local patch and then using a SWAP-style
+> routing network to coherently apply the local patch encoding across the lattice. The expensive,
+> local block-encoding cost is paid only once per query and is independent of lattice size,
+> whereas the comparatively inexpensive routing network grows linearly with the lattice size,
+> dominating at large sizes. Our method allows for a hierarchical structure in which larger
+> patches can be block-encoded with small normalization factors, albeit at a higher (local, non-
+> extensive) block-encoding cost, thereby reducing overall query complexity in an algorithm. We
+> exploit symmetries and algebraic structures in local interactions to construct efficient block
+> encodings, and we apply these techniques to the Heisenberg, Fermi-Hubbard, and honeycomb spin-
+> liquid models. For a $120\times 120$ square-lattice $J_1$-$J_2$ Heisenberg model near maximal
+> frustration ($J_2/J_1=0.4-0.6$), our methods result in a $15-17\times$ reduction in the leading
+> $T$ cost per qubitized-QPE run (ignoring initial state preparation and overlap) relative to
+> prior state-of-the-art Pauli LCU constructions. Corresponding reductions are approximately
+> $3\times$ for the $120\times120$ Fermi-Hubbard model at half-filling. For time evolution of the
+> honeycomb spin-liquid model on $120\times120$ unit cells, the leading cost is reduced by
+> $5\times$. Our framework provides a systematic way forward for larger and more accurate fault-
+> tolerant simulations of real-world quantum systems.
+
+---
+## Reading Notes
+*Annotations below. Update the status tag as you triage; the arxiv_id frontmatter must survive edits - it is the dedup key.*
+
